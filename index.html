@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+    <title>My Portofolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="beranda">
+                <img src="download (1).jpg" alt="foto profil">  
+                <h2>MyPortfolio</h2>
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <ul id="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Section Home -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1>Hi, I'm <span class="highlight">Azzam Maulana Hamzah</span></h1>
+                <h2>Web Developer & Designer</h2>
+                <p>saya menciptakan pengalaman digital yang fungsional dan indah. berfokus padakode yang bersih dan desain yang berpusat pada pengguna.</p>
+                <div class="home-btns">
+                    <a href="#project" class="btn-main">View Projects</a>
+                    <a href="#contact" class="btn-sub">Contact Me</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <img src="download (1).jpg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <!-- Section About -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-title">
+                    <h2>About <span class="highlight">Me</span></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a passionate developer with a strong foundation in web development. My goal is to build websites that not only look good but also perform exceptionally well.</p>
+                        <p>Currently, I'm exploring modern frameworks and always looking for new challenges to improve my skills.</p>
+                    </div>
+                    <div class="about-skills">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">UI Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Project -->
+        <section id="project" class="portfolio-section">
+            <div class="portfolio-container">
+                <div class="portfolio-title">
+                    <h2>My <span class="highlight">Projects</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="slider-wrapper">
+                    <button class="nav-btn prev-btn" id="prevBtn"><i class="ph ph-caret-left"></i></button>
+                    
+                    <div class="card-container" id="cardContainer">
+                        <article class="card">
+                            <img src="download (1).jpg" alt="Project 1">
+                            <div class="card-content">
+                                <h3>Esemka Laundry berbasis desktop</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn-project">Read More</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="download (1).jpg" alt="Project 2">
+                            <div class="card-content">
+                                <h3>apk kasir berbasis desktop</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn-project">Read More</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="download (1).jpg" alt="Project 3">
+                            <div class="card-content">
+                                <h3>Project 3</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="btn-project">Read More</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="download (1).jpg" alt="Project 4">
+                            <div class="card-content">
+                                <h3>Project 4</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reiciendis, quis iure vero esse officia labore ut deserunt error.</p>
+                                <a href="#" class="btn-project">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="nav-btn next-btn" id="nextBtn"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Skills -->
+        <section id="skills" class="skills-section">
+            <div class="skills-container">
+                <div class="skills-title">
+                    <h2>My <span class="highlight">Skills</span></h2>
+                    <div class="line"></div>
+                </div>
+                
+                <div class="skills-slider">
+                    <div class="skills-track">
+                        
+                        <article class="skills-card">
+                            <div class="skills-icon"><i class="ph ph-code"></i></div>
+                            <h3>Front-end Development</h3>
+                            <p>Membangun antarmuka web yang responsif, interaktif, dan berperforma tinggi.</p>
+                            <ul class="skills-list">
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>React.js</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card">
+                            <div class="skills-icon"><i class="ph ph-palette"></i></div>
+                            <h3>UI/UX & Design</h3>
+                            <p>Merancang pengalaman pengguna yang intuitif dengan estetika visual modern.</p>
+                            <ul class="skills-list">
+                                <li>Figma</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                                <li>Responsive</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card">
+                            <div class="skills-icon"><i class="ph ph-wrench"></i></div>
+                            <h3>Tools & DevOps</h3>
+                            <p>Menggunakan alat bantu modern untuk menunjang produktivitas kerja.</p>
+                            <ul class="skills-list">
+                                <li>Git & GitHub</li>
+                                <li>VS Code</li>
+                                <li>Vite</li>
+                                <li>NPM</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card">
+                            <div class="skills-icon"><i class="ph ph-database"></i></div>
+                            <h3>Back-end Basics</h3>
+                            <p>Memahami konsep dasar pengelolaan data server dan arsitektur REST API.</p>
+                            <ul class="skills-list">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>REST API</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card" aria-hidden="true">
+                            <div class="skills-icon"><i class="ph ph-code"></i></div>
+                            <h3>Front-end Development</h3>
+                            <p>Membangun antarmuka web yang responsif, interaktif, dan berperforma tinggi.</p>
+                            <ul class="skills-list">
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>React.js</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card" aria-hidden="true">
+                            <div class="skills-icon"><i class="ph ph-palette"></i></div>
+                            <h3>UI/UX & Design</h3>
+                            <p>Merancang pengalaman pengguna yang intuitif dengan estetika visual modern.</p>
+                            <ul class="skills-list">
+                                <li>Figma</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                                <li>Responsive</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card" aria-hidden="true">
+                            <div class="skills-icon"><i class="ph ph-wrench"></i></div>
+                            <h3>Tools & DevOps</h3>
+                            <p>Menggunakan alat bantu modern untuk menunjang produktivitas kerja.</p>
+                            <ul class="skills-list">
+                                <li>Git & GitHub</li>
+                                <li>VS Code</li>
+                                <li>Vite</li>
+                                <li>NPM</li>
+                            </ul>
+                        </article>
+
+                        <article class="skills-card" aria-hidden="true">
+                            <div class="skills-icon"><i class="ph ph-database"></i></div>
+                            <h3>Back-end Basics</h3>
+                            <p>Memahami konsep dasar pengelolaan data server dan arsitektur REST API.</p>
+                            <ul class="skills-list">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>REST API</li>
+                            </ul>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-title">
+                    <h2>Contact <span class="highlight">Me</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Talk!</h3>
+                        <p>Punya ide project menarik atau sekadar ingin menyapa? Silakan hubungi saya melalui form atau kontak di bawah ini.</p>
+                        
+                        <address class="contact-details">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="ph ph-envelope"></i></div>
+                                <div class="info-text">
+                                    <span>Email</span>
+                                    <a href="mailto:username@email.com">username@email.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="ph ph-map-pin"></i></div>
+                                <div class="info-text">
+                                    <span>Lokasi</span>
+                                    <p>Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Kirim Pesan <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p>I'm a passionate developer focused on creating clean, modern, and responsive websites. Let's build something amazing together!</p>            
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span class="highlight">MyPortfolio</span> All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></body>
+</html>

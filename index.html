@@ -33,8 +33,8 @@
         <section id="home" class="home-section">
             <div class="home-content">
                 <h1>Hi, I'm <span class="highlight">Azzam Maulana Hamzah</span></h1>
-                <h2>Web Developer & Designer</h2>
-                <p>saya menciptakan pengalaman digital yang fungsional dan indah. berfokus padakode yang bersih dan desain yang berpusat pada pengguna.</p>
+                <h2>Fullstack Developer & QA Engineer</h2>
+                <p>Saya membangun aplikasi web dari sisi front-end hingga back-end, sekaligus memastikan kualitasnya melalui pengujian yang terstruktur. Berfokus pada kode yang bersih, arsitektur yang scalable, dan pengalaman pengguna yang optimal.</p>
                 <div class="home-btns">
                     <a href="#project" class="btn-main">View Projects</a>
                     <a href="#contact" class="btn-sub">Contact Me</a>
@@ -47,25 +47,27 @@
 
         <!-- Section About -->
         <section id="about" class="about-section">
-            <div class="about-container">
-                <div class="about-title">
-                    <h2>About <span class="highlight">Me</span></h2>
-                    <div class="line"></div>
+        <div class="about-container">
+            <div class="about-title">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Saya adalah <strong>Fullstack Developer</strong> yang juga berperan sebagai <strong>QA Engineer</strong>. Saya menangani pengembangan aplikasi dari sisi front-end (UI/UX, interaksi) hingga back-end (API, database), serta memastikan setiap fitur berjalan sesuai requirement melalui pengujian manual maupun otomasi.</p>
+                    <p>Dengan latar belakang sebagai QA, saya terbiasa menulis kode yang <em>testable</em>, mendokumentasikan bug dengan jelas, dan berkolaborasi erat dengan tim untuk menjaga kualitas produk. Saat ini saya terus mendalami automation testing dan arsitektur aplikasi modern.</p>
                 </div>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I'm a passionate developer with a strong foundation in web development. My goal is to build websites that not only look good but also perform exceptionally well.</p>
-                        <p>Currently, I'm exploring modern frameworks and always looking for new challenges to improve my skills.</p>
-                    </div>
-                    <div class="about-skills">
-                        <span class="skill-badge">HTML</span>
-                        <span class="skill-badge">CSS</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">UI Design</span>
-                    </div>
+                <div class="about-skills">
+                    <span class="skill-badge">Fullstack Dev</span>
+                    <span class="skill-badge">QA Engineer</span>
+                    <span class="skill-badge">HTML/CSS/JS</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Manual Testing</span>
+                    <span class="skill-badge">Automation Testing</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-- Section Project -->
         <section id="project" class="portfolio-section">
@@ -82,32 +84,32 @@
                         <article class="card">
                             <img src="download (1).jpg" alt="Project 1">
                             <div class="card-content">
-                                <h3>Esemka Laundry berbasis desktop</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h3>Esemka Laundry — Desktop App</h3>
+                                <p>Aplikasi desktop untuk manajemen laundry: pencatatan transaksi, status cucian, dan laporan harian. Dibangun dengan Java + MySQL, diuji menggunakan metode black-box testing.</p>
                                 <a href="#" class="btn-project">Read More</a>
                             </div>
                         </article>
                         <article class="card">
                             <img src="download (1).jpg" alt="Project 2">
                             <div class="card-content">
-                                <h3>apk kasir berbasis desktop</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h3>Aplikasi Kasir — Desktop</h3>
+                                <p>Sistem point-of-sale sederhana dengan fitur produk, keranjang, dan struk. Saya berperan sebagai developer sekaligus QA yang menyusun test case dan skenario pengujian.</p>
                                 <a href="#" class="btn-project">Read More</a>
                             </div>
                         </article>
                         <article class="card">
                             <img src="download (1).jpg" alt="Project 3">
                             <div class="card-content">
-                                <h3>Project 3</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h3>REST API Portfolio Backend</h3>
+                                <p>API untuk mengelola data project dan pesan kontak menggunakan Node.js + Express + MongoDB. Dilengkapi pengujian endpoint dengan Postman dan validasi input.</p>
                                 <a href="#" class="btn-project">Read More</a>
                             </div>
                         </article>
                         <article class="card">
                             <img src="download (1).jpg" alt="Project 4">
                             <div class="card-content">
-                                <h3>Project 4</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reiciendis, quis iure vero esse officia labore ut deserunt error.</p>
+                                <h3>Automation Testing Suite</h3>
+                                <p>Kumpulan skrip otomasi pengujian UI dan API menggunakan Cypress/Jest untuk memastikan regresi fitur tetap stabil sebelum rilis.</p>
                                 <a href="#" class="btn-project">Read More</a>
                             </div>
                         </article>
@@ -223,7 +225,6 @@
                                 <li>REST API</li>
                             </ul>
                         </article>
-
                     </div>
                 </div>
             </div>
@@ -247,7 +248,7 @@
                                 <div class="info-icon"><i class="ph ph-envelope"></i></div>
                                 <div class="info-text">
                                     <span>Email</span>
-                                    <a href="mailto:username@email.com">username@email.com</a>
+                                    <a href="mailto:username@email.com">azzammaulana2403@gmail.com</a>
                                 </div>
                             </div>
                             <div class="info-item">
@@ -260,25 +261,24 @@
                         </address>
                     </div>
 
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" action="https://formspree.io/f/xzeezeow" method="POST">
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
                             <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
                         </div>
-
                         <div class="form-group">
                             <label for="email">Alamat Email</label>
                             <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
                         </div>
-
                         <div class="form-group">
                             <label for="message">Pesan</label>
                             <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesanmu di sini..." required></textarea>
                         </div>
-
                         <button type="submit" class="btn-submit">
                             Kirim Pesan <i class="ph ph-paper-plane-tilt"></i>
                         </button>
+                        <p id="form-status" style="display:none; margin-top:15px; color:#2dd4bf; font-weight:500;"></p>
                     </form>
                 </div>
             </div>
@@ -288,8 +288,7 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h3>About Me</h3>
-                <p>I'm a passionate developer focused on creating clean, modern, and responsive websites. Let's build something amazing together!</p>            
-            </div>
+                <p>Fullstack Developer & QA Engineer yang fokus pada pengembangan aplikasi end-to-end dan kualitas produk. Let's build something reliable and amazing together!</p>            </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>

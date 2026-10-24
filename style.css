@@ -20,8 +20,7 @@ section {
     scroll-margin-top: 20px; 
 }
 
-/*navbar*/
-
+/* ================= NAVBAR ================= */
 nav {
     background-color: #1f2532;
     display: flex;
@@ -35,14 +34,15 @@ nav {
     left: 0;
     box-sizing: border-box;
 }
+
 nav .beranda {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-nav div h2{
-    margin:0;
+nav div h2 {
+    margin: 0;
     color: #2dd4bf;
 }
 
@@ -66,8 +66,7 @@ nav ul li a {
     color: white;
     font-weight: 500;
     padding: 7px 0;
-    transition: all;
-    transition-duration: 300ms;
+    transition: all 300ms;
     border-bottom: 1px solid rgba(0, 128, 0, 0);
 }
 
@@ -76,13 +75,13 @@ nav ul li a:hover {
     border-bottom: 1px solid #2dd4bf;
 }
 
-.menu-icon{
+.menu-icon {
     align-items: center;
     display: none;
     cursor: pointer;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     nav {
         flex-wrap: wrap;
     }
@@ -116,7 +115,7 @@ nav ul li a:hover {
     }
 }
 
-/*main*/
+/* ================= MAIN ================= */
 main {
     background-color: #1a202c; 
     padding-top: 80px; 
@@ -125,7 +124,7 @@ main {
     display: block; 
 }
 
-/*====  Home section  ====*/
+/* ================= HOME SECTION ================= */
 .home-section {
     min-height: 90vh;
     display: flex;
@@ -158,7 +157,7 @@ main {
 .home-image img {
     width: 350px;
     height: 350px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Bentuk unik */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     object-fit: cover;
     border: 5px solid #2dd4bf;
     animation: morph 6s linear infinite alternate;
@@ -193,7 +192,12 @@ main {
     transition: 0.3s;
 }
 
-/* --- About Section --- */
+.btn-main:hover,
+.btn-sub:hover {
+    transform: translateY(-2px);
+}
+
+/* ================= ABOUT SECTION ================= */
 .about-section {
     padding: 100px 10%;
     background-color: #1a202c;
@@ -229,14 +233,18 @@ main {
     color: #cbd5e0;
 }
 
-.skill-badge {
+.about-text strong {
+    color: #2dd4bf;
+}
+
+.about-skills .skill-badge {
     display: inline-block;
     padding: 8px 15px;
     background: rgba(45, 212, 191, 0.1);
     border: 1px solid #2dd4bf;
     color: #2dd4bf;
     border-radius: 20px;
-    margin: 5px;
+    margin: 4px;
     font-size: 0.9rem;
 }
 
@@ -253,7 +261,7 @@ main {
     .about-grid { grid-template-columns: 1fr; }
 }
 
-/* --- Project Section --- */
+/* ================= PROJECT SECTION ================= */
 .portfolio-section {
     padding: 100px 10%;
     width: 100%;
@@ -265,7 +273,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .portfolio-title h2 {
     font-size: 2.5rem;
@@ -340,6 +347,7 @@ main {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 24px;
+    line-clamp: 3;
     display: -webkit-box;
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
@@ -414,8 +422,7 @@ main {
     }
 }
 
-
-/* --- Skills Section --- */
+/* ================= SKILLS SECTION ================= */
 .skills-section {
     padding: 100px 0; 
     background-color: #1a202c; 
@@ -474,7 +481,7 @@ main {
     display: flex;
     gap: 30px;
     width: max-content; 
-    animation: scrollLoop 25s linear infinite; 
+    animation: scrollLoop 35s linear infinite; 
 }
 
 .skills-track:hover {
@@ -560,7 +567,7 @@ main {
     }
 }
 
-/* --- Contact Section --- */
+/* ================= CONTACT SECTION ================= */
 .contact-section {
     padding: 100px 10%;
     background-color: #1a202c;
@@ -649,7 +656,6 @@ main {
     color: #2dd4bf;
 }
 
-/* Sisi Kanan: Form */
 .contact-form {
     background-color: #1f2532;
     padding: 40px;
@@ -738,27 +744,42 @@ main {
     }
 }
 
-/*footer*/
-footer{
+#form-status {
+    transition: opacity 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+#form-status {
+    transition: opacity 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+/* ================= FOOTER ================= */
+footer {
     background-color: #1f2532;
     color: #cbd5e0;
     padding: 60px 20px 20px;
 }
 
-.footer-container{
-     display: flex;
+.footer-container {
+    display: flex;
     flex-direction: column; 
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer-section{
+.footer-section {
     flex: 1;
     min-width: 250px;
 }
-.footer-section h3{
-    color:#2dd4bf;
+
+.footer-section h3 {
+    color: #2dd4bf;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -772,21 +793,21 @@ footer{
     padding: 0;
 }
 
-.footer-section ul li{
+.footer-section ul li {
     margin-bottom: 10px;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer-section ul li a:hover{
+.footer-section ul li a:hover {
     color: #2dd4bf;
 }
 
-.social-icons a{
+.social-icons a {
     color: white;
     font-size: 1.5rem;
     margin-right: 15px;
@@ -794,7 +815,7 @@ footer{
     transition: 0.3s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #2dd4bf;
 }
 
@@ -806,18 +827,18 @@ footer{
     font-size: 0.9rem;
 }
 
-.highlight{
-    color:#2dd4bf;
+.highlight {
+    color: #2dd4bf;
     font-weight: bold;
 }
 
-@media (min-width:768px){
-    .footer-container{
+@media (min-width: 768px) {
+    .footer-container {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .footer-section{
+    .footer-section {
         flex: 1;
     }
 }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+    <title>All Projects — MyPortfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="beranda">
+                <img src="assets/azzam.png" alt="foto profil">  
+                <h2>MyPortfolio</h2>
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <ul id="menu-list">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="project.html" class="active-link">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO PROJECTS ===== -->
+        <section class="projects-hero">
+            <div class="projects-hero-content">
+                <a href="index.html" class="back-link">
+                    <i class="ph ph-arrow-left"></i> Kembali ke Beranda
+                </a>
+                <h1>All <span class="highlight">Projects</span></h1>
+                <div class="line"></div>
+                <p>Kumpulan project yang pernah saya kerjakan — dari pengembangan aplikasi desktop, web app, REST API, hingga automation testing suite.</p>
+            </div>
+        </section>
+
+        <!-- ===== FILTER + GRID PROJECTS ===== -->
+        <section class="projects-section">
+            <div class="projects-container">
+                <!-- Filter Buttons -->
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="qa">QA / Testing</button>
+                </div>
+
+                <!-- Grid Projects -->
+                <div class="projects-grid" id="projectsGrid">
+
+                    <!-- Project 1 -->
+                     <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/liga-perkasa.png" alt="Automation Testing Suite">
+                            <span class="project-tag">Web App</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Website Liga Perkasa</h3>
+                            <p>Website ini dilengkapi fitur klasemen, jadwal pertandingan, dan profil tim yang dirancang agar informasi liga dapat diakses secara mudah, cepat, dan real-time. Hasilnya, Liga Perkasa kini memiliki platform online yang profesional untuk meningkatkan visibilitas liga dan memudahkan tim serta penggemar dalam memantau perkembangan kompetisi.</p>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>Laragon</span>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="btn-detail" data-project="p1">Detail <i class="ph ph-arrow-right"></i></button>
+                                <a href="https://github.com/azzam5432/liga_perkasa" class="project-link" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                     <article class="project-card" data-category="qa">
+                        <div class="project-image">
+                            <img src="assets/bug-report.png" alt="Manual Test Case">
+                            <span class="project-tag">QA</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Manual Test Case Documentation</h3>
+                            <p>Dokumentasi test case lengkap untuk aplikasi SIAMIND: functional testing, regression, dan bug report terstruktur.</p>
+                            <div class="project-tech">
+                                <span>Test Case</span>
+                                <span>Bug Report</span>
+                                <span>Black-box</span>
+                                <span>Rekapitulasi</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="btn-detail" data-project="p2">Detail <i class="ph ph-arrow-right"></i></button>
+                                <a href="#" class="project-link" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <!-- Project 4 -->
+                    <!-- Project 5 -->
+                    
+
+                </div>
+
+                <!-- Empty State (muncul kalau filter kosong) -->
+                <div class="empty-state" id="emptyState" style="display:none;">
+                    <i class="ph ph-folder-open"></i>
+                    <p>Belum ada project di kategori ini.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== MODAL DETAIL PROJECT ===== -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Tutup">
+                <i class="ph ph-x"></i>
+            </button>
+            <div class="modal-image">
+                <img src="assets/liga-perkasa.png" alt="Project Detail" id="modalImage">
+            </div>
+            <div class="modal-body">
+                <span class="modal-tag" id="modalTag">Desktop</span>
+                <h2 id="modalTitle">Judul Project</h2>
+                <p id="modalDesc">Deskripsi project.</p>
+                <div class="modal-tech" id="modalTech"></div>
+                <div class="modal-actions">
+                    <a href="#" class="btn-main" id="modalGithub">
+                        <i class="ph ph-github-logo"></i> Lihat di GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p>Fullstack Developer & QA Engineer yang fokus pada pengembangan aplikasi end-to-end dan kualitas produk. Let's build something reliable and amazing together!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/azzam_hmzh24/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/azzam5432"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/azzam-maulana-hamzah-7b816a361/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span class="highlight">MyPortfolio</span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

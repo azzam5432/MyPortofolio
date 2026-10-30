@@ -57,14 +57,14 @@
                 <div class="projects-grid" id="projectsGrid">
 
                     <!-- Project 1 -->
-                     <article class="project-card" data-category="web">
+                    <article class="project-card" data-category="web">
                         <div class="project-image">
-                            <img src="assets/liga-perkasa.png" alt="Automation Testing Suite">
+                            <img src="assets/liga-perkasa.png" alt="Website Liga Perkasa">
                             <span class="project-tag">Web App</span>
                         </div>
                         <div class="project-body">
                             <h3>Website Liga Perkasa</h3>
-                            <p>Website ini dilengkapi fitur klasemen, jadwal pertandingan, dan profil tim yang dirancang agar informasi liga dapat diakses secara mudah, cepat, dan real-time. Hasilnya, Liga Perkasa kini memiliki platform online yang profesional untuk meningkatkan visibilitas liga dan memudahkan tim serta penggemar dalam memantau perkembangan kompetisi.</p>
+                            <p>Website ini dilengkapi fitur klasemen, jadwal pertandingan, dan profil tim...</p>
                             <div class="project-tech">
                                 <span>Laravel</span>
                                 <span>PHP</span>
@@ -122,7 +122,18 @@
                 <i class="ph ph-x"></i>
             </button>
             <div class="modal-image">
-                <img src="assets/liga-perkasa.png" alt="Project Detail" id="modalImage">
+                <button class="modal-nav modal-prev" id="modalPrev" aria-label="Gambar sebelumnya">
+                    <i class="ph ph-caret-left"></i>
+                </button>
+
+                <div class="modal-slider" id="modalSlider"></div>
+
+                <button class="modal-nav modal-next" id="modalNext" aria-label="Gambar berikutnya">
+                    <i class="ph ph-caret-right"></i>
+                </button>
+
+                <span class="modal-counter" id="modalCounter">1 / 1</span>
+                <div class="modal-dots" id="modalDots"></div>
             </div>
             <div class="modal-body">
                 <span class="modal-tag" id="modalTag">Desktop</span>
